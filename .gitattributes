@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+*.dta binary
+*.rds binary
+
+*.csv text
+*.md text
+*.tsv text

@@ -1,0 +1,19 @@
+DiD_data
+========
+
+This repository is a mirror of publicly distributed replication data files
+used by the book "DiD and Beyond" (companion materials at
+github.com/pedrohcgs/Econ-730---Causal-Panel-Data).
+
+Each subdirectory's data files retain the license under which they were
+originally distributed by the paper's authors or the journal's replication
+archive. See the README.md file inside each subdirectory for the upstream
+source URL and any author-supplied license note.
+
+The directory structure, top-level README, and per-folder README files in
+this repository are made available under Creative Commons CC0 1.0
+Universal (public domain dedication). The data files themselves are NOT
+relicensed by this repository.
+
+Attribution: When citing the underlying datasets, cite the original
+papers (citations in each per-folder README), not this mirror.
