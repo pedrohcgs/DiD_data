@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/pedrohcgs/DiD_data/<sha>/<paper_folder>/<file>
 
 Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine so the script only hits GitHub on first run.
 
-## Papers currently mirrored (v0.4)
+## Papers currently mirrored (v0.5)
 
 | Folder | Paper | File(s) | Source |
 |---|---|---|---|
@@ -29,6 +29,11 @@ Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine 
 | `hoynes_miller_simon_2015/` | Hoynes, H.W., Miller, D.L. & Simon, D. (2015). "Income, the Earned Income Tax Credit, and Infant Health." *AEJ:EP* 7(1): 172–211. | `parametricdd9mon_4pl_ncits.rds` (24 MB, xz-compressed; .dta was 256 MB > GitHub limit) | AEA replication package `pol.20120179` (openICPSR 114553) |
 | `lockwood_porcelli_2013/` | Lockwood, B. & Porcelli, F. (2013). "Incentive Schemes for Local Government: Theory and Evidence from Comprehensive Performance Assessment in England." *AEJ:EP* 5(3): 254–286. | `CPADATASET.dta` (663 KB) | AEA replication package `pol.5.3.254` (openICPSR 114831) |
 | `ditella_schargrodsky_2004/` | Di Tella, R. & Schargrodsky, E. (2004). "Do Police Reduce Crime? Estimates Using the Allocation of Police Forces After a Terrorist Attack." *AER* 94(1): 115–133. | `MonthlyPanel.dta` (754 KB), `WeeklyPanel.dta` (2.7 MB), `CrimebyBlock.dta` (953 KB) | Authors' 2004 replication archive (pre-openICPSR; publicly distributed) |
+| `cao_chen_2022/` | Cao, Y. & Chen, S. (2022). "Rebel on the Canal: Disrupted Trade Access and Social Conflict in China, 1650–1911." *AER* 112(5): 1555–1590. | `analysis_panel_core.rds` (1.0 MB, xz-compressed; built panel from the corpus's verified R replication) | AEA replication package `aer.20201283` (openICPSR 157781) |
+| `moser_voena_2012/` | Moser, P. & Voena, A. (2012). "Compulsory Licensing: Evidence from the Trading with the Enemy Act." *AER* 102(1): 396–427. | `chem_patents_maindataset.dta` (25 MB) | AEA replication package `aer.102.1.396` (openICPSR 112497) |
+| `evans_garthwaite_2014/` | Evans, W.N. & Garthwaite, C.L. (2014). "Giving Mom a Break: The Impact of Higher EITC Payments on Maternal Health." *AEJ:EP* 6(2): 258–290. | `BRFSS_Final_Data.dta` (44 MB) | AEA replication package `pol.6.2.258` (openICPSR 114860) |
+| `zaklan_2023/` | Zaklan, A. (2023). "Coase and Cap-and-Trade: Evidence on the Independence Property from the European Carbon Market." *AEJ:EP* 15(2): 526–558. | `estimation_data_firm_level.dta` (1.3 MB), `estimation_data_installation_level.dta` (2.6 MB) | AEA replication package `pol.20200649` (openICPSR 152861) |
+| `charoenwong_kwan_umar_2019/` | Charoenwong, B., Kwan, A. & Umar, T. (2019). "Does Regulatory Jurisdiction Affect the Quality of Investment-Adviser Regulation?" *AER* 109(10): 3681–3712. | `firm_panel.fst` (1.1 MB), `individual_panel.fst` (17 MB) | AEA replication package `aer.20180412` (openICPSR 116210) |
 
 ## Licensing posture
 
@@ -40,3 +45,4 @@ Each subfolder mirrors data originally distributed publicly under the original a
 - **v0.2** (2026-05-19) — Added Huet-Vaughn 2019, Cheng-Raina-Xiong 2014, Juhász 2018, Okeke 2023 to support all 6 Chapter 3 book scripts.
 - **v0.3** (2026-05-20) — Added Galasso-Luo 2022 (medical-implant liability) and Barone-D'Acunto-Narciso 2015 ("Telecracy") to back the Chapter 3 §11 "More empirical examples" section.
 - **v0.4** (2026-05-20) — Added Hoynes-Miller-Simon 2015 (EITC infant health), Lockwood-Porcelli 2013 (UK Comprehensive Performance Assessment), and DiTella-Schargrodsky 2004 (AMIA attack policing) to support Chapter 4 multi-period DiD applications. Three different pre-period lengths (HMS ~3 yr, Lockwood-Porcelli 5 yr, DiTella ~4 months) to span the design spectrum. HMS stored as RDS due to GitHub's 100MB file-size limit (the original 256MB Stata .dta exceeds it; xz-compressed RDS preserves the data byte-equivalently at 24MB).
+- **v0.5** (2026-05-20) — Added five additional verified Chapter 4 candidates: Cao-Chen 2022 (Grand Canal abandonment, 262-yr panel — extreme pre-period), Moser-Voena 2012 (TWEA compulsory licensing, 65-yr panel), Evans-Garthwaite 2014 (EITC maternal health, BRFSS 1993–2001), Zaklan 2023 (EU ETS Phase III, 9-yr firm panel), and Charoenwong-Kwan-Umar 2019 (Dodd-Frank investment-adviser jurisdiction shift). All five verified to reproduce their paper-headline numbers; all five satisfy Pedro's relaxed Ch 4 criterion (no-cov ≈ with-cov, or no-cov is paper's preferred). Combined v0.4+v0.5 gives the Chapter 4 application set: 8 candidates spanning pre-periods from ~4 months (DiTella) to 262 years (Cao-Chen).
