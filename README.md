@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/pedrohcgs/DiD_data/<sha>/<paper_folder>/<file>
 
 Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine so the script only hits GitHub on first run.
 
-## Papers currently mirrored (v0.2)
+## Papers currently mirrored (v0.3)
 
 | Folder | Paper | File(s) | Source |
 |---|---|---|---|
@@ -24,6 +24,8 @@ Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine 
 | `cheng_raina_xiong_2014/` | Cheng, I.-H., Raina, S., & Xiong, W. (2014). "Wall Street and the Housing Bubble." *AER* 104(9): 2797–2829. | `hmda_matches.dta` (104 KB) | AEA replication package `aer20130297` |
 | `juhasz_2018/` | Juhász, R. (2018). "Temporary Protection and Technology Adoption: Evidence from the Napoleonic Blockade." *AER* 108(11): 3339–76. | `department_shortrun_panel.dta` (125 KB) | AEA replication package `aer20151730` (update1) |
 | `okeke_2023/` | Okeke, E.N. (2023). "When a Doctor Falls from the Sky: The Impact of Easing Doctor Supply Constraints on Mortality." *AER* 113(3): 585–627. | `staffing.dta` (119 KB) | AEA replication package `aer20210032` |
+| `galasso_luo_2022/` | Galasso, A. & Luo, H. (2022). "When Does Product Liability Risk Chill Innovation? Evidence from Medical Implants." *AEJ:EP* 14(2): 366–401. | `patent_reg_01.dta` (4.7 MB) | AEA replication package `pol.20190757` (openICPSR 142501) |
+| `barone_etal_2015/` | Barone, G., D'Acunto, F. & Narciso, G. (2015). "Telecracy: Testing for Channels of Persuasion." *AEJ:EP* 7(2): 30–60. | `Telecracy_Data_AEJPol.dta` (658 KB) | AEA replication package `pol.20130318` (openICPSR 114587) |
 
 ## Licensing posture
 
@@ -33,3 +35,4 @@ Each subfolder mirrors data originally distributed publicly under the original a
 
 - **v0.1** (2026-05-19) — Card-Krueger 1994 + Medicaid (JEL replication mirror).
 - **v0.2** (2026-05-19) — Added Huet-Vaughn 2019, Cheng-Raina-Xiong 2014, Juhász 2018, Okeke 2023 to support all 6 Chapter 3 book scripts.
+- **v0.3** (2026-05-20) — Added Galasso-Luo 2022 (medical-implant liability) and Barone-D'Acunto-Narciso 2015 ("Telecracy") to back the Chapter 3 §11 "More empirical examples" section.
