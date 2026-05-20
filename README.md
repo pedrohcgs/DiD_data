@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/pedrohcgs/DiD_data/<sha>/<paper_folder>/<file>
 
 Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine so the script only hits GitHub on first run.
 
-## Papers currently mirrored (v0.3)
+## Papers currently mirrored (v0.4)
 
 | Folder | Paper | File(s) | Source |
 |---|---|---|---|
@@ -26,6 +26,9 @@ Downloads are cached under `~/.cache/econ730-data/<sha>/` on the user's machine 
 | `okeke_2023/` | Okeke, E.N. (2023). "When a Doctor Falls from the Sky: The Impact of Easing Doctor Supply Constraints on Mortality." *AER* 113(3): 585–627. | `staffing.dta` (119 KB) | AEA replication package `aer20210032` |
 | `galasso_luo_2022/` | Galasso, A. & Luo, H. (2022). "When Does Product Liability Risk Chill Innovation? Evidence from Medical Implants." *AEJ:EP* 14(2): 366–401. | `patent_reg_01.dta` (4.7 MB) | AEA replication package `pol.20190757` (openICPSR 142501) |
 | `barone_etal_2015/` | Barone, G., D'Acunto, F. & Narciso, G. (2015). "Telecracy: Testing for Channels of Persuasion." *AEJ:EP* 7(2): 30–60. | `Telecracy_Data_AEJPol.dta` (658 KB) | AEA replication package `pol.20130318` (openICPSR 114587) |
+| `hoynes_miller_simon_2015/` | Hoynes, H.W., Miller, D.L. & Simon, D. (2015). "Income, the Earned Income Tax Credit, and Infant Health." *AEJ:EP* 7(1): 172–211. | `parametricdd9mon_4pl_ncits.rds` (24 MB, xz-compressed; .dta was 256 MB > GitHub limit) | AEA replication package `pol.20120179` (openICPSR 114553) |
+| `lockwood_porcelli_2013/` | Lockwood, B. & Porcelli, F. (2013). "Incentive Schemes for Local Government: Theory and Evidence from Comprehensive Performance Assessment in England." *AEJ:EP* 5(3): 254–286. | `CPADATASET.dta` (663 KB) | AEA replication package `pol.5.3.254` (openICPSR 114831) |
+| `ditella_schargrodsky_2004/` | Di Tella, R. & Schargrodsky, E. (2004). "Do Police Reduce Crime? Estimates Using the Allocation of Police Forces After a Terrorist Attack." *AER* 94(1): 115–133. | `MonthlyPanel.dta` (754 KB), `WeeklyPanel.dta` (2.7 MB), `CrimebyBlock.dta` (953 KB) | Authors' 2004 replication archive (pre-openICPSR; publicly distributed) |
 
 ## Licensing posture
 
@@ -36,3 +39,4 @@ Each subfolder mirrors data originally distributed publicly under the original a
 - **v0.1** (2026-05-19) — Card-Krueger 1994 + Medicaid (JEL replication mirror).
 - **v0.2** (2026-05-19) — Added Huet-Vaughn 2019, Cheng-Raina-Xiong 2014, Juhász 2018, Okeke 2023 to support all 6 Chapter 3 book scripts.
 - **v0.3** (2026-05-20) — Added Galasso-Luo 2022 (medical-implant liability) and Barone-D'Acunto-Narciso 2015 ("Telecracy") to back the Chapter 3 §11 "More empirical examples" section.
+- **v0.4** (2026-05-20) — Added Hoynes-Miller-Simon 2015 (EITC infant health), Lockwood-Porcelli 2013 (UK Comprehensive Performance Assessment), and DiTella-Schargrodsky 2004 (AMIA attack policing) to support Chapter 4 multi-period DiD applications. Three different pre-period lengths (HMS ~3 yr, Lockwood-Porcelli 5 yr, DiTella ~4 months) to span the design spectrum. HMS stored as RDS due to GitHub's 100MB file-size limit (the original 256MB Stata .dta exceeds it; xz-compressed RDS preserves the data byte-equivalently at 24MB).
